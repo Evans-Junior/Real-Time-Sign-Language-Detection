@@ -210,8 +210,16 @@ The `imageclassifier.py` script handles real-time predictions with the following
 
 
 ## Deployment On HuggingFace
-Link to project on Kaggle
+The trained model for the sign language gesture recognition project has been deployed on HuggingFace. You can access and download the model using the following link:
 
+[Sign Language Model on HuggingFace](https://huggingface.co/KEJEvans/sign-language-model)
+
+
+```python
+from huggingface_hub import hf_hub_download
+
+model_path = hf_hub_download(repo_id="KEJEvans/sign-language-model", filename="model.pkl")
+```
 
 ## Video Tutorial
 
